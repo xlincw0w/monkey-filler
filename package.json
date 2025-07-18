@@ -4,7 +4,8 @@
   "main": "index.js",
   "scripts": {
     "start": "cypress open",
-    "monkey": "cypress run --browser chrome --headed --spec ./cypress/e2e/monkey.cy.js",
+    "monkey:chrome": "cypress run --browser chrome --headed --spec ./cypress/e2e/monkey.cy.js",
+    "monkey:edge": "cypress run --browser edge --headed --spec ./cypress/e2e/monkey.cy.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],

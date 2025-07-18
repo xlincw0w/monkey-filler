@@ -45,7 +45,7 @@ function clickNextUntilGone() {
 
 describe("Monkey filler", () => {
   it("main", () => {
-    cy.visit("/MBB9NGD");
+    cy.visit(`/${Cypress.env("surveyMonkeyId")}`);
     cy.contains("OK").click();
     cy.contains("次へ").click();
 
